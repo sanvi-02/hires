@@ -1,0 +1,98 @@
+.footer {
+  background: linear-gradient(to right, #0d0d0d, #0c1b2b);
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  min-width: 250px;
+}
+
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-logo,
+.footer-ecell-logo {
+  height: 40px;
+}
+
+.footer-desc {
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.footer-address h4,
+.footer-middle h4,
+.footer-right h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 8px;
+}
+
+.footer-middle ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+  color: white;
+}
+
+.footer-right a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.footer-socials svg {
+  color: #ccc;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer-socials svg:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #333;
+}

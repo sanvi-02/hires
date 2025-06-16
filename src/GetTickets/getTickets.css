@@ -1,0 +1,72 @@
+.frame1 {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+.frame1 .bgImage {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(89, 119, 176);
+}
+
+.frame1 .button-view {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: -70px;
+}
+
+.frame1 .mainView {
+  position: absolute;
+  width: 100%;
+}
+
+.frame1 .img-2 {
+  mix-blend-mode: screen;
+  object-fit: cover;
+  width: 25vw;
+  position: relative;
+  top: 300px;
+}
+.frame1 .img-3 {
+  left: 0px;
+  mix-blend-mode: screen; /* To merge the image blend with background */
+  object-fit: cover; /* To maintain aspect ratio (no shrink) */
+  width: 25vw;
+  position: relative;
+  top: 350px;
+}
+
+.cartoon {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.frame1 .group-1 {
+  left: 0;
+  position: absolute;
+  bottom: 10;
+  width: 100%;
+}
+
+.frame1 .group-2 {
+  left: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.h2 {
+  font-weight: bold;
+  font-size: 4em;
+}

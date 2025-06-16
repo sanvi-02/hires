@@ -1,0 +1,75 @@
+.stable-section {
+  position: relative;
+  width: 100vw;
+}
+.topVeiw{
+    background-color: #d95f08;
+}
+
+.stable-section .group-2 {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.stable-section .group {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.stable-section .centre-view {
+  position: absolute;
+  top: 300px;
+  color: white;
+  text-align: center;
+}
+
+.stable-section .frame-2 {
+  width: 100vw;
+}
+
+.stable-section .text-wrapper {
+  font-size: 70px;
+  font-weight: 900;
+  
+}
+
+.stable-section .text-wrapper-2 {
+  font-size: 35px;
+  width: 100vw;
+}
+
+.stable-section .scroll-area {
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  /* position: absolute;
+  top:100px; */
+}
+
+.stable-section .scroll-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+  /* top:500px; */
+  /* position: absolute; */
+   margin-top: 400px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.stable-section .polaroiddown {
+  transform: translateY(20px);
+}
