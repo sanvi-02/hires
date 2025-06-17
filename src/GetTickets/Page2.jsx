@@ -2,8 +2,8 @@ import React from "react";
 import "./Page2.css";
 import profile2 from "../Images/profile2.png";
 import profile1 from "../Images/profile1.png";
-import frame31 from "../Images/Frame31.png";
-import frame32 from "../Images/Frame32.png";
+import frame31 from "../Images/frame31.png";
+import frame32 from "../Images/frame32.png";
 
 export const Page2 = () => {
   return (
