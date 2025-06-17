@@ -24,7 +24,7 @@ function App() {
       <Page5 />
       <Page6 />
       <Page7 />
-      <GetTickets />
+      {/* <GetTickets /> */}
       <Footer/>
     </>
   );
