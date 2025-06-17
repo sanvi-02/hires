@@ -16,7 +16,7 @@ export const Page3 = () => {
           <img className="frame-bg" src={frame26} alt="LottieFiles frame" />
           <div className="frame-content">
             <img src={speaker1} alt="Anshul Gupta" className="speaker-img" />
-            <h1>
+            {/* <h1>
               <span class="line1">Workshop by</span>
               <br />
               <span class="line2">LottieFiles</span>
@@ -26,7 +26,7 @@ export const Page3 = () => {
               Explore the fundamentals of creating <br /> animations using
               LottieFiles, and learn how to <br /> integrate them seamlessly
               into your projects <br /> elevate your designs to the next level.
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -35,7 +35,7 @@ export const Page3 = () => {
           <img className="frame-bg" src={frame27} alt="Zomato frame" />
           <div className="frame-content">
             <img src={speaker1} alt="Zomato Team" className="speaker-img" />
-            <h1>
+            {/* <h1>
               <span class="line1">Workshop by</span>
               <br />
               <span class="line2">LottieFiles</span>
@@ -44,7 +44,7 @@ export const Page3 = () => {
               Explore the fundamentals of creating <br /> animations using
               LottieFiles, and learn how to <br /> integrate them seamlessly
               into your projects <br /> elevate your designs to the next level.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
