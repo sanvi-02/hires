@@ -20,11 +20,11 @@ export const Page1 = () => {
           <br />
           transform.
         </h1>
-        <p className="hero-subtitle">
+        {/* <p className="hero-subtitle">
           Discover, learn, and grow in a space where
-          <br />
+          /src/Images/I1.png<br />
           creativity meets opportunity
-        </p>
+        </p> */}
         </div>
         <img src={staircase4} alt="Stairs Left" class="stairs stairs-left" />
         <img src={staircase3} alt="Stairs Right" class="stairs stairs-right" />

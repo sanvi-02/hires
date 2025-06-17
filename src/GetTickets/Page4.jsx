@@ -26,16 +26,17 @@ export const Page4 = () => {
         src={gif}
         onClick={() => setClicked(!clicked)}
       />
+      <div className="wire">
+        <div className="frame">
+          <div className="genesis-in-action">Genesis In Action</div>
 
-      <div className="frame">
-        <div className="genesis-in-action">Genesis In Action</div>
+          <div className="events-to-explore">EVENTS TO EXPLORE</div>
+        </div>
 
-        <div className="events-to-explore">EVENTS TO EXPLORE</div>
+        <img className="hand" alt="Hand" src={hand} />
+
+        <img className="hand-2" alt="Hand" src={image} />
       </div>
-
-      <img className="hand" alt="Hand" src={hand} />
-
-      <img className="hand-2" alt="Hand" src={image} />
 
       {/* <img className="frame-2" alt="Frame" src={frame1597884602} />
 

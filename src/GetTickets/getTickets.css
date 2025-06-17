@@ -59,7 +59,7 @@
 .frame1 .group-1 {
   left: 0;
   position: absolute;
-  bottom: 10;
+  top:520px;
   width: 100%;
 }
 
@@ -72,4 +72,33 @@
 .h2 {
   font-weight: bold;
   font-size: 3em;
+}
+@media (max-width: 768px) {
+  .img-2,
+  .img-3 {
+    width: 20vw;
+    max-width: 120px;
+    top: 10vh;
+  }
+
+  .h2 {
+    font-size: 2.2em;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-2,
+  .img-3 {
+    display: none;
+  }
+
+  .h2 {
+    font-size: 1.6em;
+  }
+
+  .button-view {
+    bottom: 40px;
+    gap: 16px;
+  }
 }

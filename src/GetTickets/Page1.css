@@ -16,7 +16,7 @@
 }
 
 .hero-title {
-  font-family: Newake, sans-serif;
+  font-family: 'Newake', sans-serif;
   font-weight: 900;
   color: #003366;
   font-size: clamp(2rem, 7vw, 5rem);
@@ -27,7 +27,7 @@
 }
 
 .hero-subtitle {
-  font-family: Causten, sans-serif;
+  font-family: 'Causten', sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: #444;
   line-height: 1.5;
@@ -47,9 +47,8 @@
 .stairs {
   position: absolute;
   bottom: 0;
- width: 100vw;
-    max-width: 500px;
-  /* min-height: 300px; */
+  width: 100vw;
+  max-width: 500px;
   height: auto;
 }
 
@@ -60,18 +59,14 @@
 .stairs-right {
   right: 0;
 }
-.g{
+
+.g {
   position: absolute;
-  top:73%;
+  top: 73%;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .hero-title {
-    font-size: 8vw;
-    line-height: 110%;
-  }
-
   .stairs {
     width: 35vw;
     max-width: 250px;
@@ -81,6 +76,37 @@
     width: 20%;
   }
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .stairs {
+    width: 40vw;
+    max-width: 180px;
+  }
+
+  .butterflies {
+    width: 25%;
+    top: 10%;
+    right: 5%;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .hero-title {
+    line-height: 1.2; /* ✅ FIXED */
+  }
+
+  .stairs {
+    width: 50vw;
+    max-width: 150px;
+  }
+
+  .butterflies {
+    width: 28%;
+  }
+}
+
 
 /* Mobile */
 @media (max-width: 768px) {

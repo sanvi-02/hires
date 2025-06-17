@@ -7,150 +7,86 @@
   text-align: center;
 }
 
-.img4 {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-
-}
+.img4,
 .img5 {
   position: absolute;
   width: 100%;
-  top: 50%;
   left: 0;
+  z-index: 0;
 }
-.text-wrap{
+
+.img4 {
+  top: 0;
+}
+
+.img5 {
+  top: 50%;
+}
+
+.text-wrap {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .text-wrap h1 {
-  font-size: 110px;
+  font-size: clamp(2.5rem, 8vw, 6.875rem); /* 110px max */
   color: black;
   margin-bottom: 0;
-  line-height: 100%;
-  letter-spacing: 4%;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
   font-family: 'Newake';
-  
 }
 
 .text-wrap h2 {
-  font-size: 28px;
+  font-size: clamp(1rem, 2.5vw, 1.75rem); /* 28px max */
   color: #555;
-  margin-top: 4px;
-  margin-bottom: 40px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   font-family: 'Causten';
   font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 4%;
-
+  line-height: 1.2;
+  letter-spacing: 0.04em;
 }
 
 .smallFrames2 {
   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap:40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   justify-items: center;
   padding: 0 40px;
+  z-index: 1;
+  position: relative;
 }
 
-/* .profile1,
-.profile2 {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px 15px;
-  max-width: 320px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-} */
-
-/* .profile10,
-.profile20 {
-  width: 100%;
-  border-radius: 10px;
-  border: 4px solid #f8f8f8;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-} */
-
+/* Profile hover scaling */
 .profile10:hover,
 .profile20:hover {
   transform: scale(1.03);
 }
 
-/* .speaker-name {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 16px 0 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* Colors for names */
-.profile1 .speaker-name {
-  color: #1a2aff; /* Blue */
-}
-
-.profile2 .speaker-name {
-  color: #e1007e; /* Pink */
-}
-
-.profile2:nth-child(3) .speaker-name {
-  color: #f36c1c; /* Orange for Sameer Chavan */
-}
-
-/* .speaker-title {
-  font-size: 15px;
-  color: #444;
-  font-weight: 500;
-  margin: 6px 0;
-}
-
-.speaker-desc {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-  margin-top: 8px;
-} */
-/* .total{
-  position: absolute;
-  top:38%;
-}
-.total2{
-  position: absolute;
-  top:88%;
-} */
+/* Speaker styles */
 .speaker-name {
   font-family: 'Newake';
   font-weight: 900;
   font-size: 40px;
-  color: #2D2C5A; /* Deep blue */
+  color: #2D2C5A;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2px; /* space between icon and name */
+  gap: 2px;
+  text-align: center;
 }
 
-/* Optional: if name includes an icon like diamond */
-/* .speaker-name::before {
-  content: url('your-icon.svg'); 
-  display: inline-block;
-  vertical-align: middle;
-} */
-
-/* Subtitle styling */
 .speaker-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 18px;
   color: #3B3B3B;
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 }
 
-/* Description text */
 .speaker-desc {
   font-family: 'Causten';
   font-weight: 400;
@@ -158,6 +94,64 @@
   color: #5A5A5A;
   line-height: 1.6;
   letter-spacing: 0.2px;
-   margin-top: 0;
-  /* padding: 0 8px; */
+  margin-top: 0;
+  text-align: center;
+}
+
+/* ------------------- RESPONSIVENESS ------------------- */
+
+@media (max-width: 1024px) {
+  .smallFrames2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .smallFrames2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .text-wrap h1 {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  .text-wrap h2 {
+    font-size: 1rem;
+  }
+
+  .speaker-name {
+    font-size: 1.5rem;
+  }
+
+  .speaker-title,
+  .speaker-desc {
+    font-size: 0.9rem;
+  }
+
+  .img4,
+  .img5 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-wrap h1 {
+    font-size: clamp(1.75rem, 9vw, 3rem);
+  }
+
+  .text-wrap h2 {
+    font-size: 0.95rem;
+  }
+
+  .speaker-name {
+    font-size: 1.3rem;
+  }
+
+  .speaker-title,
+  .speaker-desc {
+    font-size: 0.85rem;
+  }
 }
