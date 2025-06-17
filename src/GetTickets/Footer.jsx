@@ -6,13 +6,12 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
-import esummit from "../Images/esummit.png"; 
+import esummit from "../Images/esummit.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Left Column */}
         <div className="footer-left">
           <div className="footer-logo-section">
             <img src={esummit} alt="E-Summit Logo" className="footer-logo" />
@@ -39,7 +38,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Middle Column */}
         <div className="footer-middle">
           <h4>EXPLORE</h4>
           <ul>
@@ -61,7 +59,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Right Column */}
         <div className="footer-right">
           <h4>CONTACT US</h4>
           <p>
@@ -72,7 +69,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Social Icons - Below All Columns */}
       <div className="footer-socials">
         <FaFacebookF />
         <FaInstagram />
@@ -80,7 +76,6 @@ const Footer = () => {
         <FaYoutube />
       </div>
 
-      {/* Bottom Line */}
       <div className="footer-bottom">
         <p>Made with ❤️ by Design & Tech Team</p>
         <p>© 2024 E-Summit IIT Roorkee. All rights reserved.</p>

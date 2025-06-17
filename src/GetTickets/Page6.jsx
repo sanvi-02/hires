@@ -9,7 +9,7 @@ import logo6 from "../Images/6.png";
 import back from "../Images/back.png";
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6];
-// Duplicate for seamless infinite scroll
+
 const duplicatedLogos = [...logos, ...logos];
 
 export const Page6 = () => {

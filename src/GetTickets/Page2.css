@@ -30,7 +30,7 @@
 }
 
 .text-wrap h1 {
-  font-size: clamp(2.5rem, 8vw, 6.875rem); /* 110px max */
+  font-size: clamp(2.5rem, 8vw, 6.875rem); 
   color: black;
   margin-bottom: 0;
   line-height: 1.1;
@@ -39,7 +39,7 @@
 }
 
 .text-wrap h2 {
-  font-size: clamp(1rem, 2.5vw, 1.75rem); /* 28px max */
+  font-size: clamp(1rem, 2.5vw, 1.75rem); 
   color: #555;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
@@ -59,13 +59,10 @@
   position: relative;
 }
 
-/* Profile hover scaling */
 .profile10:hover,
 .profile20:hover {
   transform: scale(1.03);
 }
-
-/* Speaker styles */
 .speaker-name {
   font-family: 'Newake';
   font-weight: 900;
@@ -97,8 +94,6 @@
   margin-top: 0;
   text-align: center;
 }
-
-/* ------------------- RESPONSIVENESS ------------------- */
 
 @media (max-width: 1024px) {
   .smallFrames2 {

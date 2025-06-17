@@ -2,8 +2,7 @@ import React from "react";
 import frame25 from "../Images/frame25.png";
 import frame26 from "../Images/frame26.png";
 import frame27 from "../Images/frame27.png";
-import speaker1 from "../Images/speaker1.png"; // Example: image of LottieFiles speaker
-import speaker2 from "../Images/speaker1.png"; // Example: image of Zomato team
+import speaker1 from "../Images/speaker1.png"; 
 import "./Page3.css";
 
 export const Page3 = () => {
@@ -11,7 +10,7 @@ export const Page3 = () => {
     <div className="framePage3">
       <img className="img" alt="background" src={frame25} />
       <div className="smallFrames">
-        {/* Frame 1 */}
+  
         <div className="frameCard">
           <img className="frame-bg" src={frame26} alt="LottieFiles frame" />
           <div className="frame-content">
@@ -29,8 +28,6 @@ export const Page3 = () => {
             </p> */}
           </div>
         </div>
-
-        {/* Frame 2 */}
         <div className="frameCard">
           <img className="frame-bg" src={frame27} alt="Zomato frame" />
           <div className="frame-content">

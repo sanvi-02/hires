@@ -5,7 +5,6 @@
   overflow: hidden;
 }
 
-/* Left Illustration */
 .hero-left-img {
   position: absolute;
   top: 14%;
@@ -15,8 +14,6 @@
   height: auto;
   z-index: 1;
 }
-
-/* Right Illustration */
 .hero-right-img {
   position: absolute;
   top: 14%;
@@ -27,7 +24,6 @@
   z-index: 1;
 }
 
-/* Central Image */
 .hires {
   position: absolute;
   top: 20%;
@@ -39,7 +35,6 @@
   z-index: 2;
 }
 
-/* Button Styling */
 .hero-button {
   position: absolute;
   top: 60%;
@@ -56,10 +51,6 @@
   z-index: 3;
   cursor: pointer;
 }
-
-/* ========================== */
-/* 📱 Responsive Media Queries */
-/* ========================== */
 
 @media (max-width: 1024px) {
   .hero-left-img,

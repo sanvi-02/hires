@@ -70,7 +70,6 @@
   text-align: center;
 }
 
-/* Hand images */
 .wireframe .hand,
 .wireframe .hand-2 {
   position: absolute;
@@ -90,8 +89,6 @@
   left: 0;
   height: auto;
 }
-
-/* Phone section */
 .phoneFrame,
 .phoneFrame2 {
   display: flex;
@@ -114,8 +111,6 @@
 .phoneFrame2 {
   background-color: #e56270;
 }
-
-/* Inner content */
 .div-2,
 .div-3 {
   display: flex;
@@ -142,8 +137,6 @@
   max-width: 700px;
   padding: 0 1rem;
 }
-
-/* Responsive Text */
 .zenigma,
 .text1 {
   font-size: clamp(1.25rem, 4vw, 2rem);
@@ -157,7 +150,7 @@
   line-height: 1.6;
 }
 
-/* ------------------- MEDIA QUERIES ------------------- */
+
 
 @media (max-width: 768px) {
   .wireframe .butterfly {
