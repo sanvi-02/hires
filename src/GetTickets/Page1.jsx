@@ -2,6 +2,7 @@ import React from "react";
 import unite from "../Images/unite.png";
 import staircase3 from "../Images/staircase3.png";
 import staircase4 from "../Images/staircase4.png";
+import group1597891 from "../Images/Group-159789 copy.png";
 import butterfly10 from "../Images/butterflies10.png";
 import "./Page1.css";
 
@@ -12,7 +13,7 @@ export const Page1 = () => {
       <div className="hero-section">
         <img src={butterfly10} alt="Butterflies" className="butterflies" />
         <div className="text-wrap">
-        <h1 className="hero-title">
+          <h1 className="hero-title">
           unite.
           <br />
           create.
@@ -25,16 +26,9 @@ export const Page1 = () => {
           creativity meets opportunity
         </p>
         </div>
-        <img
-          src={staircase4}
-          alt="Stairs Left"
-          class="stairs stairs-left"
-        />
-        <img
-          src={staircase3}
-          alt="Stairs Right"
-          class="stairs stairs-right"
-        />
+        <img src={staircase4} alt="Stairs Left" class="stairs stairs-left" />
+        <img src={staircase3} alt="Stairs Right" class="stairs stairs-right" />
+        <img className="g" alt="group" src={group1597891} />
       </div>
     </div>
   );

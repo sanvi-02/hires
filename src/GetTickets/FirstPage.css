@@ -1,50 +1,133 @@
-.framePage0{
- position: relative;
+.framePage0 {
+  position: relative;
   width: 100vw;
   background: #f5f5f5;
-}
-/* .hero-wrapper {
-  position: relative;
-  padding: 100px 20px 60px;
-  background-color: #fefcf3;
-  text-align: center;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
-} */
+}
 
 /* Left Illustration */
 .hero-left-img {
   position: absolute;
-  top: 25%;
+  top: 14%;
   left: 0;
-  width: 600px;
-  height:800px;
+  width: 39vw;
+  max-width: 600px;
+  height: auto;
+  z-index: 1;
 }
 
-/* Right Hand Illustration */
+/* Right Illustration */
 .hero-right-img {
   position: absolute;
-  top: 25%;
+  top: 14%;
   right: 0;
-   width: 500px;
-  height:800px;
+  width: 50vw;
+  max-width: 500px;
+  height: auto;
+  z-index: 1;
 }
+
+/* Central Image */
+.hires {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45vw;
+  max-width: 500px;
+  height: auto;
+  z-index: 2;
+}
+
+/* Button Styling */
 .hero-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #f9a825;
   color: #000;
   border: none;
-  padding: 20px 40px;
-  font-size: 29px;
+  padding: 15px 30px;
+  font-size: 24px;
   font-weight: 900;
   border-radius: 50px;
-  top:650px;
-  position: absolute;
-  left:620px;
-  border-bottom: 6px solid black;  
-
+  border-bottom: 6px solid black;
+  z-index: 3;
+  cursor: pointer;
 }
-.hires{
-    position: absolute;
-    top:230px;
-    left:400px;
+
+/* ========================== */
+/* 📱 Responsive Media Queries */
+/* ========================== */
+
+@media (max-width: 1024px) {
+  .hero-left-img,
+  .hero-right-img {
+    width: 25vw;
+  }
+
+  .hires {
+    width: 50vw;
+    top: 18%;
+  }
+
+  .hero-button {
+    top: 68%;
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left-img,
+  .hero-right-img {
+    width: 20vw;
+  }
+
+  .hires {
+    width: 60vw;
+    top: 18%;
+  }
+
+  .hero-button {
+    top: 66%;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left-img,
+  .hero-right-img {
+    display: none;
+  }
+
+  .hires {
+    width: 80vw;
+    top: 22%;
+  }
+
+  .hero-button {
+    top: 120%;
+    font-size: 16px;
+    padding: 4px 10px;
+  }
+}
+@media (max-width: 240px) {
+  .hero-left-img,
+  .hero-right-img {
+    display: none;
+  }
+
+  .hires {
+    width: 80vw;
+    top: 22%;
+  }
+
+  .hero-button {
+    top: 120%;
+    font-size: 16px;
+    padding: 4px 10px;
+  }
 }

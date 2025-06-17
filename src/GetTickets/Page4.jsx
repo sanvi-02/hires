@@ -17,7 +17,7 @@ export const Page4 = () => {
     <div className="wireframe">
       <img className="image" alt="Image" src={image4} />
 
-      <img className="img" alt="Image" src={image5} />
+      {/* <img className="img" alt="Image" src={image5} /> */}
       {/* <img className="img1" alt="Image" src={image5} /> */}
 
       <img

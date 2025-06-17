@@ -15,7 +15,7 @@ const duplicatedLogos = [...logos, ...logos];
 export const Page6 = () => {
   return (
     <div className="frameScreen">
-        <img className="img" alt="back" src={back} />
+        {/* <img className="img" alt="back" src={back} /> */}
         <div className="partner-slider">
           <h2 className="slider-title">Partners</h2>
           <div className="slider-wrapper">

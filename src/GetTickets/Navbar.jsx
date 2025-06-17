@@ -1,41 +1,32 @@
-// src/components/Navbar.jsx
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import esummit from "../Images/esummit.png"; // Replace with actual logo path
+import logo from "../Images/esummit.png"
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <img src={esummit} alt="E-Summit Logo" />
+      {/* <div className="logo">MySite</div> */}
+      <img className="img" alt="back" src={logo} />
+
+      <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <a href="#home">Home</a>
+        <a href="#about">Event</a>
+        <a href="#projects">Speaker</a>
+        <a href="#contact">Workshop</a>
+        <a href="#contact">Partners</a>
+        <a href="#contact">Sponsers</a>
+        <button class="btn">Login/register</button>
       </div>
-      <ul className="navbar-links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Hi-Res</a>
-        </li>
-        <li>
-          <a href="#">Benefits</a>
-        </li>
-        <li>
-          <a href="#">Process</a>
-        </li>
-        <li>
-          <a href="#">Testimonials</a>
-        </li>
-        <li>
-          <a href="#">FAQs</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-      <div className="navbar-auth">
-        <a href="#" className="auth-button">
-          Login/Signup
-        </a>
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
     </nav>
   );

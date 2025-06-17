@@ -18,14 +18,17 @@
   background-color: rgb(89, 119, 176);
 }
 
-.frame1 .button-view {
+.button-view {
+  position: absolute;
+  bottom: -70px; 
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  position: absolute;
-  bottom: -70px;
+  gap: 20px; /* space between text and button */
 }
-
 .frame1 .mainView {
   position: absolute;
   width: 100%;
@@ -68,5 +71,5 @@
 }
 .h2 {
   font-weight: bold;
-  font-size: 4em;
+  font-size: 3em;
 }

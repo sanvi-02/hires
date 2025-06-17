@@ -2,8 +2,11 @@
   position: relative;
   width: 100vw;
 }
-.topVeiw{
-    background-color: #d95f08;
+
+.topVeiw {
+  background-color: #d95f08;
+  width: 100%;
+  display: block;
 }
 
 .stable-section .group-2 {
@@ -22,9 +25,10 @@
 
 .stable-section .centre-view {
   position: absolute;
-  top: 300px;
+  top: 280px;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 .stable-section .frame-2 {
@@ -32,13 +36,12 @@
 }
 
 .stable-section .text-wrapper {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 900;
-  
 }
 
 .stable-section .text-wrapper-2 {
-  font-size: 35px;
+  font-size: 30px;
   width: 100vw;
 }
 
@@ -47,18 +50,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  /* position: absolute;
-  top:100px; */
 }
 
 .stable-section .scroll-track {
   display: flex;
-  gap: 40px;
+  gap: 2vw;
   animation: scroll-left 30s linear infinite;
   width: max-content;
-  /* top:500px; */
-  /* position: absolute; */
-   margin-top: 400px;
+  margin-top: 350px;
+}
+
+/* ✅ Make slider images responsive */
+.scroll-track img {
+  width: 18vw;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Downward polaroid shift */
+.stable-section .polaroiddown {
+  transform: translateY(20px);
 }
 
 @keyframes scroll-left {
@@ -70,6 +81,87 @@
   }
 }
 
-.stable-section .polaroiddown {
-  transform: translateY(20px);
+/* ============================= */
+/* 📱 Responsive Styles Below 📱 */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .stable-section .centre-view {
+    top: 180px;
+  }
+
+  .stable-section .text-wrapper {
+    font-size: 40px;
+  }
+
+  .stable-section .text-wrapper-2 {
+    font-size: 23px;
+  }
+
+  .stable-section .scroll-track {
+    margin-top: 230px;
+    gap: 2.5vw;
+  }
+
+  .scroll-track img {
+    width: 18vw;
+  }
+
+  .stable-section .polaroiddown {
+    transform: translateY(15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .stable-section .centre-view {
+    top: 100px;
+  }
+
+  .stable-section .text-wrapper {
+    font-size: 28px;
+  }
+
+  .stable-section .text-wrapper-2 {
+    font-size: 16px;
+  }
+
+  .stable-section .scroll-track {
+    margin-top: 130px;
+    gap: 3vw;
+  }
+
+  .scroll-track img {
+    width: 18vw;
+  }
+
+  .stable-section .polaroiddown {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .stable-section .centre-view {
+    top: 70px;
+  }
+
+  .stable-section .text-wrapper {
+    font-size: 20px;
+  }
+
+  .stable-section .text-wrapper-2 {
+    font-size: 8px;
+  }
+
+  .stable-section .scroll-track {
+    margin-top: 90px;
+    gap: 4vw;
+  }
+
+  .scroll-track img {
+    width: 16vw;
+  }
+
+  .stable-section .polaroiddown {
+    transform: translateY(8px);
+  }
 }
